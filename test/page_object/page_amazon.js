@@ -14,7 +14,7 @@ export class AmazonPage extends Page {
   }
   
   get_nb_items_in_cart(){
-    return this.nb_items_in_cart
+    return this.nb_items_in_cart.getText()
   }
 
   navigate_to_cart(){
