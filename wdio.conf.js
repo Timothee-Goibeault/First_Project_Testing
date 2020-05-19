@@ -133,6 +133,10 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000
     },
+
+    cucumberOpts: {
+        require: [path.join(__dirname + '/test/steps/**/**.js')]
+    },
     //
     // =====
     // Hooks
