@@ -1,5 +1,5 @@
 Feature: Gestion du panier
- 
+
     Scenario: ajouter un article au panier depuis la page produit
         Given  un client avec 0 article dans son panier recherchant le "premier article " 
         dans la catégorie "Jardin" des "Meilleures ventes"

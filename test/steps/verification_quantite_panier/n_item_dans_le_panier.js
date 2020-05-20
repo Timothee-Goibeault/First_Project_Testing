@@ -10,5 +10,5 @@ const timeout = 60000;
 
 Then(/^le nombre d'article dans le panier est égale à {int} $/,  (a) => { 
     
-    expect(AmazonPage.get_nb_items_in_cart()).to.equal(a)
+    expect(CartPage.get_nb_items_in_cart()).to.equal(a)
  });
