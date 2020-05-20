@@ -1,6 +1,9 @@
 
-export default class Page {
-    
+module.exports class Page {
+    constructor() {
+        this.title = browser.title()
+    }
+
     get title(){ return browser.title() }
     
     open(path) {
@@ -9,3 +12,4 @@ export default class Page {
     
     
 }
+const Page = new Page

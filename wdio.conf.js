@@ -113,7 +113,7 @@ exports.config = {
     //
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
-    frameworks: ['mocha','cucumber'],
+    framework: 'cucumber',
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -137,8 +137,6 @@ exports.config = {
     cucumberOpts: {
          // <boolean> show full backtrace for errors
          backtrace: false,
-         // <string[]> module used for processing required features
-         requireModule: ['@babel/register'],
          // <boolean< Treat ambiguous definitions as errors
          failAmbiguousDefinitions: true,
          // <boolean> invoke formatters without executing steps

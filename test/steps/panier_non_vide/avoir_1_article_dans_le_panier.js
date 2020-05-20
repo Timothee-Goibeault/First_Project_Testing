@@ -1,4 +1,4 @@
-import { Given } from 'cucumber';
+const { Given, When, Then } = require('cucumber')
 const expect = require('chai').expect
 
 import AmazonPage from '../../page_object/page_amazon';

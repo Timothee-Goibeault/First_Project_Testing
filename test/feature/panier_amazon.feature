@@ -1,8 +1,7 @@
 Feature: Gestion du panier
 
     Scenario: ajouter un article au panier depuis la page produit
-        Given  un client avec 0 article dans son panier recherchant le "premier article " 
-        dans la catégorie "Jardin" des "Meilleures ventes"
+        Given  un client avec 0 article dans son panier recherchant le "premier article " dans la catégorie "Jardin" des "Meilleures ventes"
         When   il clique sur le bouton "Ajouter au panier"
         Then   le nombre d'article dans le panier est égale à "1"
  

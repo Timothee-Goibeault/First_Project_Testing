@@ -1,9 +1,9 @@
 
 
 const timeout = 60000;
-import Page from './page'
-
-export class AmazonPage extends Page {
+//import Page from './page'
+const Page = require('./page')
+class AmazonPage extends Page {
   
   get cart_button() { return $('//*[@id="nav-cart"]') }
   get nb_items_in_cart() { return $('//*[@id="nav-cart-count"]') }
@@ -26,6 +26,6 @@ export class AmazonPage extends Page {
   }
 
 }
-export default new AmazonPage
+//export default new AmazonPage
 
 
