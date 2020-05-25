@@ -1,9 +1,9 @@
 
 
 const timeout = 60000;
-import AmazonPage from './page_amazon'
+const AmazonPage =  require('./page_amazon');
 
-export class CartPage  extends AmazonPage {
+class CartPage  /*extends AmazonPage*/ {
 
     get link_set_1st_article_aside(){ $('/html/body/div[1]/div[4]/div/div[5]/div/div[2]/div[3]/form/div[2]/div[3]/div[4]/div/div[1]/div/div/div[2]/div[1]/span[3]/span/input')}
     get link_see_article_aside(){$('/html/body/div[1]/div[4]/div/div[5]/div/div[2]/div[5]/form/div/span/input')}
@@ -31,4 +31,4 @@ export class CartPage  extends AmazonPage {
     }
 
   }
-  export default new CartPage
+  module.export = new CartPage();

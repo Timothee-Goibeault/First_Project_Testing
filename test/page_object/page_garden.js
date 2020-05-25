@@ -1,7 +1,6 @@
 const timeout = 60000;
-import AmazonPage from './page_amazon'
-
-export class GardenPage  extends AmazonPage {
+const AmazonPage =  require('./page_amazon');
+class GardenPage  /* extends AmazonPage*/ {
 
     get first_item() {$('//*[@id="zg-ordered-list"]/li[1]/span/div/span/a/span/div/img')}
     
@@ -14,4 +13,4 @@ export class GardenPage  extends AmazonPage {
     }
     
   }
-  export default new GardenPage
+  module.export = new GardenPage();

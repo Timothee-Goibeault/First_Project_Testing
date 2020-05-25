@@ -1,16 +1,15 @@
-
-
 const timeout = 60000;
 //import Page from './page'
-const Page = require('./page')
-class AmazonPage extends Page {
+const Page = require('./page');
+
+class AmazonPage /*extends Page*/ {
   
   get cart_button() { return $('//*[@id="nav-cart"]') }
   get nb_items_in_cart() { return $('//*[@id="nav-cart-count"]') }
   get best_sellers_button(){ return $('//*[@id="nav-xshop"]/a[1]') }
   
-  open() {
-    super.open('https://amazon.fr');  
+  open(path) {
+    browser.url(path)
   }
   
   get_nb_items_in_cart(){
@@ -26,6 +25,7 @@ class AmazonPage extends Page {
   }
 
 }
+module.export = new AmazonPage();
 //export default new AmazonPage
 
 

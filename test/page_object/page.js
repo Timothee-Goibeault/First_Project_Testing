@@ -1,10 +1,8 @@
+class Page {
+    constructor(){}
 
-module.exports class Page {
-    constructor() {
-        this.title = browser.title()
-    }
-
-    get title(){ return browser.title() }
+    get title(){ return browser.getTitle() }
+    
     
     open(path) {
         browser.url(path)
@@ -12,4 +10,4 @@ module.exports class Page {
     
     
 }
-const Page = new Page
+module.export = new Page()

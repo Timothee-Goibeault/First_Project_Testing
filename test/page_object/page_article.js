@@ -1,9 +1,9 @@
 
 
 const timeout = 60000;
-import AmazonPage from './page_amazon'
+const AmazonPage =  require('./page_amazon');
 
-export class ArticlePage  extends AmazonPage {
+class ArticlePage  /*extends AmazonPage*/ {
     
     get add_in_cart_button() { $('//*[@id="add-to-cart-button"]') }
 
@@ -12,4 +12,4 @@ export class ArticlePage  extends AmazonPage {
     }
 
   }
-  export default new ArticlePage
+  module.export = new ArticlePage();

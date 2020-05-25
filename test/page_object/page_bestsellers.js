@@ -1,10 +1,10 @@
-import { Before, Given, When, Then, BeforeAll } from 'cucumber';
-import { expect, use } from 'chai';
+
 
 const timeout = 60000;
-import AmazonPage from './page_amazon'
 
-export class BestsellersPage  extends AmazonPage {
+const AmazonPage =  require('./page_amazon');
+
+class BestsellersPage  /*extends AmazonPage*/ {
 
     get link_garden() { return $('//*[@id="zg_browseRoot"]/ul/li[25]/a') }
 
@@ -18,4 +18,4 @@ export class BestsellersPage  extends AmazonPage {
 
 
   }
-  export default new BestsellersPage
+  module.export = new BestsellersPage();
