@@ -8,7 +8,7 @@ const ArticlePage =  require('../../page_object/page_article');
 const CartPage = require('../../page_object/page_cart');
 const timeout = 60000;
 
-When("qu'il clique sur le bouton "Supprimer"",  () => { 
+When(/^qu'il clique sur le bouton Supprimer$/,  () => { 
     
     CartPage.remove_1st_article()
  });

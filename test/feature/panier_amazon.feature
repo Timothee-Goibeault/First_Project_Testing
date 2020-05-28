@@ -14,7 +14,7 @@ Feature: Gestion du panier
     Scenario: Enlever un article du panier
         Given  un client avec 1 article dans son panier
         When   il clique sur le bouton Mon panier
-        And    qu'il clique sur le bouton "Supprimer"
+        And    qu'il clique sur le bouton Supprimer
         Then   le nombre d'article dans le panier est égale à 0
     
     #Scenario: Mettre un article de côté dans le panier
