@@ -18,4 +18,4 @@ class BestsellersPage  /*extends AmazonPage*/ {
 
 
   }
-  module.export = new BestsellersPage();
+  module.exports = new BestsellersPage();

@@ -25,7 +25,7 @@ class AmazonPage /*extends Page*/ {
   }
 
 }
-module.export = new AmazonPage();
+module.exports = new AmazonPage();
 //export default new AmazonPage
 
 

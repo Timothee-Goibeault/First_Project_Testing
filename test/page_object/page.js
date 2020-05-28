@@ -10,4 +10,4 @@ class Page {
     
     
 }
-module.export = new Page()
+module.exports = new Page()
