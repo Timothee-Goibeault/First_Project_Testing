@@ -135,42 +135,42 @@ exports.config = {
     },
 
     cucumberOpts: {
-         // <boolean> show full backtrace for errors
-         backtrace: false,
-         // <boolean< Treat ambiguous definitions as errors
-         failAmbiguousDefinitions: true,
-         // <boolean> invoke formatters without executing steps
-         // dryRun: false,
-         // <boolean> abort the run on first failure
-         failFast: false,
-         // <boolean> Enable this config to treat undefined definitions as
-         // warnings
-         ignoreUndefinedDefinitions: false,
-         // <string[]> ("extension:module") require files with the given
-         // EXTENSION after requiring MODULE (repeatable)
-         name: [],
-         // <boolean> hide step definition snippets for pending steps
-         snippets: true,
-         // <boolean> hide source uris
-         source: true,
-         // <string[]> (name) specify the profile to use
-         profile: [],
+        // <boolean> show full backtrace for errors
+        backtrace: false,
+        // <boolean< Treat ambiguous definitions as errors
+        failAmbiguousDefinitions: true,
+        // <boolean> invoke formatters without executing steps
+        // dryRun: false,
+        // <boolean> abort the run on first failure
+        failFast: false,
+        // <boolean> Enable this config to treat undefined definitions as
+        // warnings
+        ignoreUndefinedDefinitions: false,
+        // <string[]> ("extension:module") require files with the given
+        // EXTENSION after requiring MODULE (repeatable)
+        name: [],
+        // <boolean> hide step definition snippets for pending steps
+        snippets: true,
+        // <boolean> hide source uris
+        source: true,
+        // <string[]> (name) specify the profile to use
+        profile: [],
 
-        require: ['./test/steps/**/*.js'],
-        // <string> specify a custom snippet syntax
-        snippetSyntax: undefined,
-        // <boolean> fail if there are any undefined or pending steps
-        strict: true,
-        // <string> (expression) only execute the features or scenarios with
-        // tags matching the expression, see
-        // https://docs.cucumber.io/tag-expressions/
-        tagExpression: 'not @Pending',
-        // <boolean> add cucumber tags to feature or scenario name
-        tagsInTitle: false,
-        // <number> timeout for step definitions
-        timeout: 20000,
-        
-    },
+       require: ['./test/steps/**/*.js'],
+       // <string> specify a custom snippet syntax
+       snippetSyntax: undefined,
+       // <boolean> fail if there are any undefined or pending steps
+       strict: true,
+       // <string> (expression) only execute the features or scenarios with
+       // tags matching the expression, see
+       // https://docs.cucumber.io/tag-expressions/
+       tagExpression: 'not @Pending',
+       // <boolean> add cucumber tags to feature or scenario name
+       tagsInTitle: false,
+       // <number> timeout for step definitions
+       timeout: 20000,
+       
+   },
     //
     // =====
     // Hooks
