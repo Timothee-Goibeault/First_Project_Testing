@@ -21,7 +21,7 @@
     "chai": "^4.2.0",
     "chromedriver": "^83.0.4103.97",
     "cucumber": "^6.0.5",
-    "mocha": "^7.2.0",
+    "mocha": "^10.2.0",
     "wdio-chromedriver-service": "^6.0.3",
     "wdio-cucumberjs-json-reporter": "^2.0.2"
   }
